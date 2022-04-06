@@ -1,0 +1,45 @@
+
+
+.content{
+  background: #fff;
+  /* max-width: 960px; */
+  margin: 30px auto;
+  padding:  20px 30px;
+
+ 
+ 
+}
+
+ul{
+  list-style-type: none;
+  padding: 0;
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+li{
+  padding: 20px;
+  margin:10px;
+  background: #ffffff;
+  font-size: 20px;
+  color: rgb(170, 170, 170);
+  position: relative;
+  border-bottom: 1px solid #e6e6e6;
+  height:auto;
+  width:auto;
+  box-shadow: 1px 3px 5px rgba(0,0,0,0.1)
+}
+
+li:nth-child(even){
+  padding: 20px;
+  background: #dffdff;
+}
+
+li span{
+  display: block;
+  color:#171b1f;
+}
+
+
+

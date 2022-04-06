@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AddProduct</title>
+   
+</head>
+<body>
+    <script id="replace_navbar" src="/src/nav.js"></script>
+    <button
+    class=" position-absolute top-0 end-0 translate-middle btn btn-light btn-lg mt-5 m-2" style="padding:10px 50px"
+    id="logout"
+  >
+   Logout
+  </button>
+    <div class="container">
+        <a  href="seller.html"><button type="button" class="btn btn--light mx-3" ><img src="https://img.icons8.com/material-sharp/24/000000/arrow-pointing-left.png"/> Go back</button></a>
+        <center>
+            <span class="fs-2">Add New Product</span><br /><br />
+    <form class="add" >
+
+        <label for="name"   class="m-2 p-2 fw-bold">Name:</label>
+        <input type="text"   class="m-2 p-2" name="name" required> <br>
+        <label for="brand"   class="m-2 p-2 fw-bold">Brand:</label>
+        <input type="text"   class="m-2 p-2" name="brand" required><br>
+        <label for="price"   class="m-2 p-2 fw-bold">Price:</label>
+        <input type="number"    class="m-2 p-2" name="price" required><br>
+        <label for="category"   class="m-2 p-2 fw-bold">Category:</label>
+        
+        <select name="category"   class="m-2 p-2" required>
+            <option hidden>-Select-</option>
+            <option value="Clothing">Clothing</option>
+            <option value="Accessories">Accessories</option>
+            <option value="Figurins">Figurins</option>
+            <option value="Garage Set"> Garage Set</option>
+        </select><br>
+        
+        <button    class="btn btn-primary m-2 p-2 btn-lg  mt-5 px-3" >add a new product</button>
+      </form>
+      </center>
+    </div>
+      <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+
+      <!-- TODO: Add SDKs for Firebase products that you want to use
+               https://firebase.google.com/docs/web/setup#available-libraries -->
+      <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+  
+      <!-- Our script must be loaded after firebase references -->
+   
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+      <script src="/src/cred.js"></script>
+      <script src="/src/addproduct.js"></script>
+      <script src="/src/logout.js"></script>
+</body>
+</html>
